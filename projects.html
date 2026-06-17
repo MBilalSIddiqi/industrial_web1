@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE OUTPUT | Industrial Project Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 6rem 0 4rem;
+            background-color: var(--charcoal);
+            color: var(--white);
+            border-bottom: 4px solid var(--charcoal);
+        }
+        .page-header h1 { color: var(--white); }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 900px) {
+            .project-grid {
+                gap: 2rem;
+            }
+            .project-image {
+                height: 200px;
+            }
+        }
+
+        .project-card {
+            border: 4px solid var(--charcoal);
+            background-color: var(--white);
+            transition: var(--transition);
+        }
+
+        .project-image {
+            height: 300px;
+            background-color: var(--concrete);
+            border-bottom: 4px solid var(--charcoal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-data {
+            padding: 2.5rem;
+        }
+
+        .data-table {
+            width: 100%;
+            margin-top: 1.5rem;
+            border-top: 2px solid var(--concrete);
+            padding-top: 1.5rem;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .data-val { color: var(--safety-orange); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">IRONCLAD</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="label-mono">OUTPUT_INDEX</span>
+                <h1>THE OUTPUT.</h1>
+                <p style="font-weight: 700; max-width: 600px; opacity: 0.8;">A comprehensive log of our most significant structural and industrial achievements.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <span style="font-size: 4rem; opacity: 0.2;">🏗️</span>
+                        </div>
+                        <div class="project-data">
+                            <span class="label-mono">INFRASTRUCTURE / 2025</span>
+                            <h3>Atlantic Wind Hub</h3>
+                            <p>Structural steel components for the largest offshore wind farm in the Northern Atlantic.</p>
+                            <div class="data-table">
+                                <div class="data-row"><span>WEIGHT_LOAD</span><span class="data-val">5,400T</span></div>
+                                <div class="data-row"><span>DURABILITY_LOG</span><span class="data-val">100_YEARS</span></div>
+                                <div class="data-row"><span>STATUS</span><span class="data-val">OPERATIONAL</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: var(--caution-yellow);">
+                            <span style="font-size: 4rem; opacity: 0.2;">🏭</span>
+                        </div>
+                        <div class="project-data">
+                            <span class="label-mono">MANUFACTURING / 2024</span>
+                            <h3>Gigafactory X-12</h3>
+                            <p>Automated assembly line framework and reinforced foundation for high-output battery production.</p>
+                            <div class="data-table">
+                                <div class="data-row"><span>AREA_SCALE</span><span class="data-val">1.2M_SQFT</span></div>
+                                <div class="data-row"><span>PRECISION_TOL</span><span class="data-val">0.001MM</span></div>
+                                <div class="data-row"><span>STATUS</span><span class="data-val">COMPLETED</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: var(--safety-orange);">
+                            <span style="font-size: 4rem; opacity: 0.2;">🚀</span>
+                        </div>
+                        <div class="project-data">
+                            <span class="label-mono">AEROSPACE / 2023</span>
+                            <h3>Launch Node 09</h3>
+                            <p>Heat-resistant alloy structures and structural dampening systems for heavy-lift launch facilities.</p>
+                            <div class="data-table">
+                                <div class="data-row"><span>TEMP_RESIST</span><span class="data-val">3,200C</span></div>
+                                <div class="data-row"><span>ALLOY_TYPE</span><span class="data-val">IC-TITAN_9</span></div>
+                                <div class="data-row"><span>STATUS</span><span class="data-val">OPERATIONAL</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image" style="background-color: var(--charcoal);">
+                            <span style="font-size: 4rem; opacity: 0.2; color: var(--white);">🚢</span>
+                        </div>
+                        <div class="project-data">
+                            <span class="label-mono">LOGISTICS / 2023</span>
+                            <h3>Terminal Blue</h3>
+                            <p>Fully autonomous shipping container management system and heavy crane infrastructure.</p>
+                            <div class="data-table">
+                                <div class="data-row"><span>THROUGHPUT</span><span class="data-val">12k_TEU/DAY</span></div>
+                                <div class="data-row"><span>AUTOMATION</span><span class="data-val">98.5%</span></div>
+                                <div class="data-row"><span>STATUS</span><span class="data-val">LIVE</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">IRONCLAD</div>
+                    <p>Ironclad Industrial Group. Structural integrity since 1984. (DE_2026)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Foundation</a></li>
+                        <li><a href="projects.html">Output</a></li>
+                        <li><a href="contact.html">Protocol</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NODE_LOCATIONS</h4>
+                    <ul>
+                        <li>Berlin, DE</li>
+                        <li>Detroit, US</li>
+                        <li>Tokyo, JP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IRONCLAD INDUSTRIAL GROUP. (UNCOMPROMISING_QUALITY)</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

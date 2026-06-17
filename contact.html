@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTOCOL | Contact Ironclad Industrial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 6rem 0 4rem;
+            background-color: var(--caution-yellow);
+            border-bottom: 4px solid var(--charcoal);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+        }
+
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .form-industrial {
+                padding: 2rem;
+            }
+        }
+
+        .form-industrial {
+            border: 4px solid var(--charcoal);
+            background-color: var(--white);
+            padding: 4rem;
+            box-shadow: 15px 15px 0px var(--charcoal);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 4px solid var(--charcoal);
+            background-color: var(--white);
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            background-color: var(--concrete);
+            box-shadow: 5px 5px 0px var(--safety-orange);
+        }
+
+        .contact-method {
+            margin-bottom: 3rem;
+        }
+
+        .contact-method h4 {
+            color: var(--safety-orange);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">IRONCLAD</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="label-mono">COMMUNICATION_PROTOCOL</span>
+                <h1>PROTOCOL.</h1>
+                <p style="font-weight: 700; max-width: 600px;">Direct lines for high-stakes industrial inquiries and project initiation.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div>
+                        <h2>NODE_ACCESS</h2>
+                        <p style="margin-bottom: 3rem; font-weight: 700;">Connect with our technical response team.</p>
+                        
+                        <div class="contact-method">
+                            <h4>// SECURE_EMAIL</h4>
+                            <p>operations@ironclad-group.com</p>
+                            <p>projects@ironclad-group.com</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4>// DIRECT_DIAL</h4>
+                            <p>+49 (0) 30 987 654 32</p>
+                            <p>Available 08:00 - 18:00 CET</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h4>// PHYSICAL_NODE</h4>
+                            <p>Ironclad Industrial Park<br>Industrialstrasse 44-48<br>10115 Berlin, Germany</p>
+                        </div>
+                    </div>
+
+                    <div class="form-industrial">
+                        <h3 style="margin-bottom: 2rem;">INITIATE_DATA_TRANSMISSION</h3>
+                        <form id="industrialContactForm">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                                <div class="form-group">
+                                    <label>SENDER_NAME</label>
+                                    <input type="text" required placeholder="J. DOE">
+                                </div>
+                                <div class="form-group">
+                                    <label>ORG_IDENTIFIER</label>
+                                    <input type="text" placeholder="CORP_ID">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>RETURN_ADDRESS (EMAIL)</label>
+                                <input type="email" required placeholder="EMAIL@SERVER.COM">
+                            </div>
+                            <div class="form-group">
+                                <label>INQUIRY_TYPE</label>
+                                <select>
+                                    <option>MANUFACTURING_BID</option>
+                                    <option>INFRASTRUCTURE_DEV</option>
+                                    <option>LOGISTICS_INTEGRATION</option>
+                                    <option>GENERAL_QUERY</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>DATA_STREAM (MESSAGE)</label>
+                                <textarea rows="5" required placeholder="ENTER TRANSMISSION..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-industrial" style="width: 100%;">START_TRANSMISSION</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">IRONCLAD</div>
+                    <p>Ironclad Industrial Group. Structural integrity since 1984. (DE_2026)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Foundation</a></li>
+                        <li><a href="projects.html">Output</a></li>
+                        <li><a href="contact.html">Protocol</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NODE_LOCATIONS</h4>
+                    <ul>
+                        <li>Berlin, DE</li>
+                        <li>Detroit, US</li>
+                        <li>Tokyo, JP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IRONCLAD INDUSTRIAL GROUP. (UNCOMPROMISING_QUALITY)</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

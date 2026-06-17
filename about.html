@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FOUNDATION | About Ironclad Industrial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 6rem 0 4rem;
+            background-color: var(--concrete);
+            border-bottom: 4px solid var(--charcoal);
+        }
+
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .blueprint-box {
+            background-color: var(--charcoal);
+            height: 500px;
+            position: relative;
+            border: 4px solid var(--charcoal);
+            overflow: hidden;
+        }
+
+        @media (max-width: 900px) {
+            .about-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .blueprint-box {
+                height: 300px;
+                order: -1;
+            }
+        }
+
+        .blueprint-grid {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2px;
+            background-color: var(--charcoal);
+            border: 4px solid var(--charcoal);
+            margin-top: 4rem;
+        }
+
+        .team-member {
+            background-color: var(--white);
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .team-member h3 { color: var(--safety-orange); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">IRONCLAD</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span class="label-mono">ORIGIN_LOG</span>
+                <h1>THE FOUNDATION.</h1>
+                <p style="font-weight: 700; max-width: 600px;">Built on forty years of engineering excellence and structural innovation.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="about-layout">
+                    <div>
+                        <h2 style="margin-bottom: 2rem;">STRUCTURAL_INTEGRITY</h2>
+                        <p style="margin-bottom: 1.5rem;">Ironclad began as a specialized metalworks facility in the heart of Germany's industrial sector. Our mission was simple: provide the most durable components for the world's most demanding machines.</p>
+                        <p style="margin-bottom: 1.5rem;">Today, we have evolved into a global conglomerate, yet our core values remain unchanged. We believe in the honesty of materials, the precision of mathematics, and the power of hard work.</p>
+                        <p>We don't build for the moment; we build for the next century.</p>
+                    </div>
+                    <div class="blueprint-box">
+                        <div class="blueprint-grid"></div>
+                        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:var(--white); text-align:center;">
+                            <span style="font-size: 5rem; font-weight: 900; opacity: 0.2;">BLUEPRINT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-orange">
+            <div class="container">
+                <h2 style="color: var(--white); border-bottom-color: var(--white);">TECHNICAL_LEADERSHIP</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <span class="label-mono">CEO / ENGINEER</span>
+                        <h3>Klaus Wagner</h3>
+                        <p style="font-size: 0.8rem;">40+ years in structural design and large-scale project management.</p>
+                    </div>
+                    <div class="team-member">
+                        <span class="label-mono">COO / LOGISTICS</span>
+                        <h3>Elena Rossi</h3>
+                        <p style="font-size: 0.8rem;">Specialist in automated supply chains and international trade protocols.</p>
+                    </div>
+                    <div class="team-member">
+                        <span class="label-mono">CTO / INNOVATION</span>
+                        <h3>Marcus Chen</h3>
+                        <p style="font-size: 0.8rem;">Leading the transition to sustainable manufacturing and 3D printing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">IRONCLAD</div>
+                    <p>Ironclad Industrial Group. Structural integrity since 1984. (DE_2026)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Foundation</a></li>
+                        <li><a href="projects.html">Output</a></li>
+                        <li><a href="contact.html">Protocol</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>NODE_LOCATIONS</h4>
+                    <ul>
+                        <li>Berlin, DE</li>
+                        <li>Detroit, US</li>
+                        <li>Tokyo, JP</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IRONCLAD INDUSTRIAL GROUP. (UNCOMPROMISING_QUALITY)</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
